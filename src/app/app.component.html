@@ -1,0 +1,10 @@
+<jqxGrid #myGrid
+  [source]="dataAdapter" [columns]="columns"
+    [pageable]="true" [autoheight]="true" [sortable]="true" 
+    [altrows]="true"  [enabletooltips]="true"  [editable]="true" 
+    [selectionmode]="'multiplecellsadvanced'" [columngroups]="columngroups" [filterable]="true">
+</jqxGrid>
+
+<button (click)="cogerEstado()">Coger estado</button>
+
+<router-outlet></router-outlet>
